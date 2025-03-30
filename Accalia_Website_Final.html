@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accalia Physics Tutoring</title>
+  <meta name="description" content="Physics tutoring that focuses on logic, clarity, and student-centered teaching. Accalia Physics Tutoring offers personalized sessions for high school and college students.">
+
+  <!-- colors and stuff -->
+  <style>
+    :root {
+      --bg: #fcfcfc;
+      --text: #1c1c1c;
+      --accent: #ffb347;
+      --dark: #2c2c2c;
+      --light: #e8e8e8;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.7)), url('image4.png') no-repeat center/cover;
+      padding: 6rem 2rem;
+      text-align: center;
+      color: white;
+    }
+
+    header h1, header p {
+      opacity: 0;
+      transform: translateY(-20px);
+      animation: slideDown 1.2s ease-out forwards;
+    }
+
+    header p {
+      animation-delay: 0.4s;
+    }
+
+    header h1 {
+      font-size: 3.2rem;
+      letter-spacing: -0.5px;
+      margin-bottom: 0.5rem;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      font-style: italic;
+    }
+
+    @keyframes slideDown {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 1rem;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: var(--dark);
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.3rem 0.6rem;
+      border-radius: 4px;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    nav a:hover {
+      background-color: var(--light);
+      transform: scale(1.05);
+      color: var(--dark);
+    }
+
+    section {
+      width: 100%;
+      padding: 4rem 1rem;
+      border-bottom: 1px solid var(--light);
+    }
+
+    /* setting background colors for different sections */
+    #about, #how, #contact {
+      background-color: #fff;
+      color: var(--text);
+    }
+
+    #why, #success {
+      background-color: var(--dark);
+      color: white;
+    }
+
+    section h2 {
+      font-family: Georgia, serif;
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .text-content {
+      max-width: 820px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      background-color: var(--dark);
+      color: #ccc;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+      will-change: opacity, transform;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      section h2 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- main title area -->
+  <header>
+    <h1>Accalia Physics Tutoring</h1>
+    <p>Where physics becomes surprisingly clear.</p>
+  </header>
+
+  <!-- nav bar with links to page sections -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#why">Why</a>
+    <a href="#how">How</a>
+    <a href="#success">Success</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <div class="text-content fade-in">
+      <p>
+        At Accalia Physics Tutoring, we don’t just throw facts at students. We build understanding through structure, logic, and clarity. Sessions are tailored, visual, and rooted in principles. Instead of memorizing formulas, students learn where they come from and how to think through them. We slow down to pinpoint confusion and rebuild from the ground up, with precision and momentum. Led by a physics graduate with a stellar academic background and hundreds of hours of one-on-one experience, each session is shaped by real insight. From fundamentals to advanced topics, students walk away sharper, more confident, and seeing the world differently.
+      </p>
+    </div>
+  </section>
+
+  <section id="why">
+    <h2>Why We Do It</h2>
+    <div class="text-content fade-in">
+      <p>
+        Most students don’t struggle because they haven't tried, they struggle because no one’s ever explained things in a way that actually makes sense. We’ve seen it again and again. Once the reasoning clicks, the stress drops, the confidence builds, and the student starts to feel in control. That’s the shift we aim for—not just better grades, but better thinkers.
+      </p>
+    </div>
+  </section>
+
+  <section id="how">
+    <h2>How It Works</h2>
+    <div class="text-content fade-in">
+      <p>
+        We don’t follow a script. Every session is shaped by how the student thinks, what’s unclear, what makes sense, and how they naturally approach problems. We identify where the confusion starts, then build up from there with clarity and momentum. Along the way, students pick up more than just physics. They learn how to break things down, ask the right questions, and figure things out on their own. It’s a way of thinking that sticks—long after their experience with Accalia Tutoring.
+      </p>
+    </div>
+  </section>
+
+  <section id="success">
+    <h2>Success Stories</h2>
+    <div class="text-content fade-in">
+      <p>
+        A lot of students come to us feeling like they’re too far behind to catch up. Some have missed weeks of material. Others feel like they’ve been staring at the same problems for hours with nothing making sense. But something happens when the sessions start clicking. The fog lifts. They begin to solve problems they used to avoid. Concepts that once felt impossible suddenly make sense.
+        We’ve seen this happen with over 60 students, from high schoolers to college physics majors. Because every session is built around how they think, progress isn’t just possible. It’s often surprisingly fast. The right explanation at the right moment can change everything. And when it does, it’s hard not to smile.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <div class="text-content fade-in">
+      <p>
+        If you have questions or want to know more about how the sessions work, feel free to reach out. Each session is <strong>70 minutes</strong>, <strong>$19</strong>, and can be held <strong>remotely</strong> or <strong>in person</strong>.
+      </p>
+      <p>
+        You can reach us at <a href="mailto:hassan31kalashtar@gmail.com"><strong>hassan31kalashtar@gmail.com</strong></a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- animation script -->
+  <script>
+    // probably could combine some of this, but it's working
+    const fadingStuff = document.querySelectorAll('.fade-in');
+
+    const observerThing = new IntersectionObserver((entries) => {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible'); // not sure if I need this line
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px"
+    });
+
+    fadingStuff.forEach(el => {
+      observerThing.observe(el);
+    });
+  </script>
+
+</body>
+</html>
